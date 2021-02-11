@@ -11,7 +11,6 @@ findUserByUsername(users, 'mlewis') // {username: 'mlewis'}
 findUserByUsername(users, 'taco') // undefined
 */
 
-// NEEDS REWORK
 function findUserByUserName(usersArray, username) {
   // return find(function())
   return usersArray.find(function(name) {
@@ -33,7 +32,6 @@ removeUser(users, 'akagen') // {username: 'akagen'}
 removeUser(users, 'akagen') // undefined
 */
 
-// NEEDS REWORK
 function removeUser(usersArray, username) {
   let foundIndex = usersArray.findIndex(function(user){
     return user.username === username;
