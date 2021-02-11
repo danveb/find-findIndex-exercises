@@ -8,10 +8,10 @@ describe("#findUserByUsername", function() {
     ];
   });
   it("returns the object if the username matches the string passed", function() {
-    expect(findUserByUsername(users, "akagen")).toEqual({ username: "akagen" });
+    expect(findUserByUserName(users, "akagen")).toEqual({ username: "akagen" });
   });
   it("returns undefined if a username is not found", function() {
-    expect(findUserByUsername(users, 'taco')).toEqual(undefined);
+    expect(findUserByUserName(users, 'taco')).toEqual(undefined);
   });
 });
 
